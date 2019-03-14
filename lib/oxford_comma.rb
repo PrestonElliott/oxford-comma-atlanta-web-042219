@@ -1,5 +1,9 @@
 def oxford_comma(array)
-  return array.join(" and ")
+  if array.length != 0 && array.length > 2
+    last element = array[-1]
+    array.pop
+    new_array = array.join(", ")
+    
 end
 
 
